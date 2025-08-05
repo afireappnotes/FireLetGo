@@ -142,47 +142,15 @@ class NoteEditorViewController: UIViewController {
         button.contentEdgeInsets = UIEdgeInsets(top: 12, left: 20, bottom: 12, right: 20)
         button.layer.cornerRadius = 22
         
-        if useGradient {
-            // Create gradient background for burn button
-            let gradientLayer = CAGradientLayer()
-            gradientLayer.colors = [UIColor.systemOrange.cgColor, UIColor.systemRed.cgColor]
-            gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-            gradientLayer.endPoint = CGPoint(x: 1, y: 0)
-            gradientLayer.cornerRadius = 22
-            
-            button.layer.insertSublayer(gradientLayer, at: 0)
-            
-            // Explicitly set white colors for gradient button
-            button.setTitleColor(.white, for: .normal)
-            button.setTitleColor(.white, for: .highlighted)
-            button.tintColor = .white
-            
-            // Force the image to be white by creating a template image
-            let whiteImage = image?.withTintColor(.white, renderingMode: .alwaysOriginal)
-            button.setImage(whiteImage, for: .normal)
-            button.setImage(whiteImage, for: .highlighted)
-            
-            // Add shadow
-            button.layer.shadowColor = UIColor.systemOrange.cgColor
-            button.layer.shadowOffset = CGSize(width: 0, height: 4)
-            button.layer.shadowRadius = 12
-            button.layer.shadowOpacity = 0.4
-            
-            // Update gradient frame when layout changes
-            DispatchQueue.main.async {
-                gradientLayer.frame = button.bounds
-            }
-        } else {
-            // Blue style for save button
-            button.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.2)
-            button.setTitleColor(.systemBlue, for: .normal)
-            button.tintColor = .systemBlue
-            
-            // Add subtle border
-            button.layer.borderWidth = 1
-            button.layer.borderColor = UIColor.systemBlue.withAlphaComponent(0.3).cgColor
-        }
-
+        let color = !useGradient ? UIColor.systemBlue : UIColor.systemOrange
+        button.backgroundColor = color.withAlphaComponent(0.2)
+        button.setTitleColor(color, for: .normal)
+        button.tintColor = color
+        
+        // Add subtle border
+        button.layer.borderWidth = 1
+        button.layer.borderColor = color.withAlphaComponent(0.3).cgColor
+        
         return button
     }
 
@@ -236,8 +204,8 @@ class NoteEditorViewController: UIViewController {
         burnableContainer.isUserInteractionEnabled = false
 
         let duration: CFTimeInterval = 5.0
-        let startRect = CGRect(x: 0, y: 16, width: burnableContainer.bounds.width, height: burnableContainer.bounds.height)
-        let endRect = CGRect(x: 0, y: burnableContainer.bounds.height + 16, width: burnableContainer.bounds.width, height: 0)
+        let startRect = CGRect(x: 0, y: 8, width: burnableContainer.bounds.width, height: burnableContainer.bounds.height)
+        let endRect = CGRect(x: 0, y: burnableContainer.bounds.height + 8, width: burnableContainer.bounds.width, height: 0)
 
         maskLayer.path = UIBezierPath(rect: startRect).cgPath
         burnableContainer.layer.mask = maskLayer
