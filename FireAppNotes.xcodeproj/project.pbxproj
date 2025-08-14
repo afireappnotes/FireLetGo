@@ -6,41 +6,117 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D4F9FD792E4E09760045C0D3 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D4F9FD722E4E09760045C0D3 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D4F9FD822E4E09DF0045C0D3 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = D4F9FD812E4E09DF0045C0D3 /* OneSignalExtension */; };
+		D4F9FD842E4E09DF0045C0D3 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = D4F9FD832E4E09DF0045C0D3 /* OneSignalFramework */; };
+		D4F9FD862E4E09DF0045C0D3 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = D4F9FD852E4E09DF0045C0D3 /* OneSignalInAppMessages */; };
+		D4F9FD882E4E09DF0045C0D3 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = D4F9FD872E4E09DF0045C0D3 /* OneSignalLocation */; };
+		D4F9FD8B2E4E105B0045C0D3 /* AppsFlyerLib-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D4F9FD8A2E4E105B0045C0D3 /* AppsFlyerLib-Dynamic */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4F9FD772E4E09760045C0D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D47BCAAC2E4DF32A00D1FD7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4F9FD712E4E09760045C0D3;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4F9FD7E2E4E09760045C0D3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4F9FD792E4E09760045C0D3 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		4F67692A2E3A9FC200A7B976 /* FireAppNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireAppNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D47BCAB42E4DF32A00D1FD7C /* FireAppNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireAppNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F9FD722E4E09760045C0D3 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D47BCAC62E4DF32C00D1FD7C /* Exceptions for "FireAppNotes" folder in "FireAppNotes" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D47BCAB32E4DF32A00D1FD7C /* FireAppNotes */;
+		};
+		D4F9FD7D2E4E09760045C0D3 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D4F9FD712E4E09760045C0D3 /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4F67692C2E3A9FC200A7B976 /* fire */ = {
+		D47BCAB62E4DF32A00D1FD7C /* FireAppNotes */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fire;
+			exceptions = (
+				D47BCAC62E4DF32C00D1FD7C /* Exceptions for "FireAppNotes" folder in "FireAppNotes" target */,
+			);
+			path = FireAppNotes;
+			sourceTree = "<group>";
+		};
+		D4F9FD732E4E09760045C0D3 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D4F9FD7D2E4E09760045C0D3 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4F6769272E3A9FC200A7B976 /* Frameworks */ = {
+		D47BCAB12E4DF32A00D1FD7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F9FD862E4E09DF0045C0D3 /* OneSignalInAppMessages in Frameworks */,
+				D4F9FD882E4E09DF0045C0D3 /* OneSignalLocation in Frameworks */,
+				D4F9FD842E4E09DF0045C0D3 /* OneSignalFramework in Frameworks */,
+				D4F9FD8B2E4E105B0045C0D3 /* AppsFlyerLib-Dynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F9FD6F2E4E09760045C0D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F9FD822E4E09DF0045C0D3 /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F6769212E3A9FC200A7B976 = {
+		D47BCAAB2E4DF32A00D1FD7C = {
 			isa = PBXGroup;
 			children = (
-				4F67692C2E3A9FC200A7B976 /* fire */,
-				4F67692B2E3A9FC200A7B976 /* Products */,
+				D47BCAB62E4DF32A00D1FD7C /* FireAppNotes */,
+				D4F9FD732E4E09760045C0D3 /* OneSignalNotificationServiceExtension */,
+				D47BCAB52E4DF32A00D1FD7C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4F67692B2E3A9FC200A7B976 /* Products */ = {
+		D47BCAB52E4DF32A00D1FD7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F67692A2E3A9FC200A7B976 /* FireAppNotes.app */,
+				D47BCAB42E4DF32A00D1FD7C /* FireAppNotes.app */,
+				D4F9FD722E4E09760045C0D3 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +124,108 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F6769292E3A9FC200A7B976 /* FireAppNotes */ = {
+		D47BCAB32E4DF32A00D1FD7C /* FireAppNotes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F6769412E3A9FC800A7B976 /* Build configuration list for PBXNativeTarget "FireAppNotes" */;
+			buildConfigurationList = D47BCAC72E4DF32C00D1FD7C /* Build configuration list for PBXNativeTarget "FireAppNotes" */;
 			buildPhases = (
-				4F6769262E3A9FC200A7B976 /* Sources */,
-				4F6769272E3A9FC200A7B976 /* Frameworks */,
-				4F6769282E3A9FC200A7B976 /* Resources */,
+				D47BCAB02E4DF32A00D1FD7C /* Sources */,
+				D47BCAB12E4DF32A00D1FD7C /* Frameworks */,
+				D47BCAB22E4DF32A00D1FD7C /* Resources */,
+				D4F9FD7E2E4E09760045C0D3 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4F9FD782E4E09760045C0D3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D47BCAB62E4DF32A00D1FD7C /* FireAppNotes */,
+			);
+			name = FireAppNotes;
+			packageProductDependencies = (
+				D4F9FD832E4E09DF0045C0D3 /* OneSignalFramework */,
+				D4F9FD852E4E09DF0045C0D3 /* OneSignalInAppMessages */,
+				D4F9FD872E4E09DF0045C0D3 /* OneSignalLocation */,
+				D4F9FD8A2E4E105B0045C0D3 /* AppsFlyerLib-Dynamic */,
+			);
+			productName = FireAppNotes;
+			productReference = D47BCAB42E4DF32A00D1FD7C /* FireAppNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4F9FD712E4E09760045C0D3 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4F9FD7A2E4E09760045C0D3 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				D4F9FD6E2E4E09760045C0D3 /* Sources */,
+				D4F9FD6F2E4E09760045C0D3 /* Frameworks */,
+				D4F9FD702E4E09760045C0D3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4F67692C2E3A9FC200A7B976 /* fire */,
+				D4F9FD732E4E09760045C0D3 /* OneSignalNotificationServiceExtension */,
 			);
-			name = FireAppNotes;
+			name = OneSignalNotificationServiceExtension;
 			packageProductDependencies = (
+				D4F9FD812E4E09DF0045C0D3 /* OneSignalExtension */,
 			);
-			productName = fire;
-			productReference = 4F67692A2E3A9FC200A7B976 /* FireAppNotes.app */;
-			productType = "com.apple.product-type.application";
+			productName = OneSignalNotificationServiceExtension;
+			productReference = D4F9FD722E4E09760045C0D3 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4F6769222E3A9FC200A7B976 /* Project object */ = {
+		D47BCAAC2E4DF32A00D1FD7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					4F6769292E3A9FC200A7B976 = {
-						CreatedOnToolsVersion = 16.3;
+					D47BCAB32E4DF32A00D1FD7C = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D4F9FD712E4E09760045C0D3 = {
+						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 4F6769252E3A9FC200A7B976 /* Build configuration list for PBXProject "FireAppNotes" */;
+			buildConfigurationList = D47BCAAF2E4DF32A00D1FD7C /* Build configuration list for PBXProject "FireAppNotes" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 4F6769212E3A9FC200A7B976;
+			mainGroup = D47BCAAB2E4DF32A00D1FD7C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D4F9FD802E4E09DF0045C0D3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				D4F9FD892E4E105B0045C0D3 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Dynamic" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 4F67692B2E3A9FC200A7B976 /* Products */;
+			productRefGroup = D47BCAB52E4DF32A00D1FD7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F6769292E3A9FC200A7B976 /* FireAppNotes */,
+				D47BCAB32E4DF32A00D1FD7C /* FireAppNotes */,
+				D4F9FD712E4E09760045C0D3 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4F6769282E3A9FC200A7B976 /* Resources */ = {
+		D47BCAB22E4DF32A00D1FD7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F9FD702E4E09760045C0D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +235,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4F6769262E3A9FC200A7B976 /* Sources */ = {
+		D47BCAB02E4DF32A00D1FD7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F9FD6E2E4E09760045C0D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,8 +251,88 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D4F9FD782E4E09760045C0D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4F9FD712E4E09760045C0D3 /* OneSignalNotificationServiceExtension */;
+			targetProxy = D4F9FD772E4E09760045C0D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		4F67693F2E3A9FC800A7B976 /* Debug */ = {
+		D47BCAC82E4DF32C00D1FD7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FireAppNotes/FireAppNotes.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FireAppNotes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FireAppNotes;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Special offers and customized promotions made for you\n        \n        Advertising that reflects your personal preferences\n\n        An engaging experience designed around your needs\n\n        Supports keeping the app free for everyone";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afireappnotes.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D47BCAC92E4DF32C00D1FD7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FireAppNotes/FireAppNotes.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FireAppNotes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FireAppNotes;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Special offers and customized promotions made for you\n        \n        Advertising that reflects your personal preferences\n\n        An engaging experience designed around your needs\n\n        Supports keeping the app free for everyone";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afireappnotes.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D47BCACA2E4DF32C00D1FD7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -160,7 +367,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = Z5GK9C4MBD;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -178,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -189,7 +395,7 @@
 			};
 			name = Debug;
 		};
-		4F6769402E3A9FC800A7B976 /* Release */ = {
+		D47BCACB2E4DF32C00D1FD7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +430,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z5GK9C4MBD;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -236,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -246,98 +451,138 @@
 			};
 			name = Release;
 		};
-		4F6769422E3A9FC800A7B976 /* Debug */ = {
+		D4F9FD7B2E4E09760045C0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = FireAppNotes;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.afireappnotes.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afireappnotes.app.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4F6769432E3A9FC800A7B976 /* Release */ = {
+		D4F9FD7C2E4E09760045C0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = FireAppNotes;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.afireappnotes.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afireappnotes.app.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F6769252E3A9FC200A7B976 /* Build configuration list for PBXProject "FireAppNotes" */ = {
+		D47BCAAF2E4DF32A00D1FD7C /* Build configuration list for PBXProject "FireAppNotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F67693F2E3A9FC800A7B976 /* Debug */,
-				4F6769402E3A9FC800A7B976 /* Release */,
+				D47BCACA2E4DF32C00D1FD7C /* Debug */,
+				D47BCACB2E4DF32C00D1FD7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F6769412E3A9FC800A7B976 /* Build configuration list for PBXNativeTarget "FireAppNotes" */ = {
+		D47BCAC72E4DF32C00D1FD7C /* Build configuration list for PBXNativeTarget "FireAppNotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F6769422E3A9FC800A7B976 /* Debug */,
-				4F6769432E3A9FC800A7B976 /* Release */,
+				D47BCAC82E4DF32C00D1FD7C /* Debug */,
+				D47BCAC92E4DF32C00D1FD7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4F9FD7A2E4E09760045C0D3 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F9FD7B2E4E09760045C0D3 /* Debug */,
+				D4F9FD7C2E4E09760045C0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4F9FD802E4E09DF0045C0D3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = exactVersion;
+				version = 5.2.8;
+			};
+		};
+		D4F9FD892E4E105B0045C0D3 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Dynamic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Dynamic";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4F9FD812E4E09DF0045C0D3 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4F9FD802E4E09DF0045C0D3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		D4F9FD832E4E09DF0045C0D3 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4F9FD802E4E09DF0045C0D3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		D4F9FD852E4E09DF0045C0D3 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4F9FD802E4E09DF0045C0D3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+		D4F9FD872E4E09DF0045C0D3 /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4F9FD802E4E09DF0045C0D3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalLocation;
+		};
+		D4F9FD8A2E4E105B0045C0D3 /* AppsFlyerLib-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4F9FD892E4E105B0045C0D3 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Dynamic" */;
+			productName = "AppsFlyerLib-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 4F6769222E3A9FC200A7B976 /* Project object */;
+	rootObject = D47BCAAC2E4DF32A00D1FD7C /* Project object */;
 }

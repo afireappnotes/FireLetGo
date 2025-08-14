@@ -78,6 +78,7 @@ struct OnboardingView: View {
                             .cornerRadius(16)
                         }
                         .padding(.horizontal, 32)
+                        .padding(.bottom, 65)
                     } else {
                         // Next button
                         Button(action: {
@@ -108,7 +109,7 @@ struct OnboardingView: View {
                             }
                         }
                         .foregroundColor(.secondary)
-                        .padding(.bottom, 32)
+                        .padding(.bottom, 65)
                     }
                 }
             }
