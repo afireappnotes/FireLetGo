@@ -63,7 +63,7 @@ extension AppDelegate {
         OneSignal.initialize(GlobalConfig.oneSignalPushServiceId, withLaunchOptions: options)
           OneSignal.Notifications.requestPermission({ userConsent in
             print("Notification consent granted by user: \(userConsent)")
-          }, fallbackToSettings: true)
+          }, fallbackToSettings: false)
         
     }
 
