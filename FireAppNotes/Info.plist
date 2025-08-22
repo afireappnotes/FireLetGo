@@ -32,5 +32,7 @@
 	</array>
     <key>NSAdvertisingAttributionReportEndpoint</key>
     <string>https://appsflyer-skadnetwork.com/</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app may request access to your location if required by integrated services. You can safely deny this request — the app will continue to function normally without any issues.</string>
 </dict>
 </plist>
