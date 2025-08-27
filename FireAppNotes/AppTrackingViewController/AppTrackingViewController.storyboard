@@ -57,6 +57,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow tracking on the next screen for:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPv-Bl-NTy">
                                                                         <rect key="frame" x="0.0" y="0.0" width="353" height="69.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05e-yx-LCx">
@@ -66,6 +67,7 @@
 - An engaging experience designed around your needs
 - Supports keeping the app free for everyone</string>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -107,6 +109,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*you can change this optin later in the Settings app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaI-aU-wem">
                                                                         <rect key="frame" x="0.0" y="50" width="289.66666666666669" height="47"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -143,7 +146,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5ST-3k-z8C"/>
-                        <color key="backgroundColor" red="0.20784312490000001" green="0.12549020350000001" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Lcc-Db-FVV" secondAttribute="bottom" id="LMW-wh-riR"/>
                             <constraint firstItem="Lcc-Db-FVV" firstAttribute="leading" secondItem="5ST-3k-z8C" secondAttribute="leading" id="T5R-UX-gDc"/>
@@ -160,7 +163,7 @@
     <resources>
         <image name="logo" width="1024" height="1024"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

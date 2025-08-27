@@ -15,28 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="SQs-gS-e8a">
-                                <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="SQs-gS-e8a" secondAttribute="height" id="7pW-vE-sLq"/>
-                                    <constraint firstAttribute="width" constant="300" id="Q0d-hZ-B16"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sp" translatesAutoresizingMaskIntoConstraints="NO" id="SQs-gS-e8a">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="R0A-JG-D6J"/>
                         <color key="backgroundColor" red="0.20784312490000001" green="0.12549020350000001" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="SQs-gS-e8a" firstAttribute="centerX" secondItem="egK-Kc-0bS" secondAttribute="centerX" id="K22-4L-ofe"/>
-                            <constraint firstItem="SQs-gS-e8a" firstAttribute="centerY" secondItem="egK-Kc-0bS" secondAttribute="centerY" id="leG-l4-rft"/>
+                            <constraint firstItem="SQs-gS-e8a" firstAttribute="top" secondItem="egK-Kc-0bS" secondAttribute="top" id="S2e-e4-0N2"/>
+                            <constraint firstItem="SQs-gS-e8a" firstAttribute="trailing" secondItem="R0A-JG-D6J" secondAttribute="trailing" id="aHa-lc-2l9"/>
+                            <constraint firstItem="SQs-gS-e8a" firstAttribute="leading" secondItem="R0A-JG-D6J" secondAttribute="leading" id="dHq-QX-txh"/>
+                            <constraint firstAttribute="bottom" secondItem="SQs-gS-e8a" secondAttribute="bottom" id="dgf-EX-0Ae"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYp-2e-VV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7" y="-28"/>
+            <point key="canvasLocation" x="6.8702290076335872" y="-28.169014084507044"/>
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="1024" height="1024"/>
+        <image name="sp" width="800" height="800"/>
     </resources>
 </document>
